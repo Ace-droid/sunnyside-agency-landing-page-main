@@ -594,10 +594,11 @@ footer{
    }
 
 
-}
+} 
 
 @media (max-width: 450px) {
    .header-container h1{
+      margin-top: 4.5rem;
       font-size: 2rem;
    }
    
