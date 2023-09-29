@@ -138,7 +138,7 @@ header{
 
 .nav-links ul{
    display: flex;
-   gap: 2rem;
+   gap: 2.5rem;
 
 }
 
@@ -149,6 +149,7 @@ header{
 .nav-links ul li a{
    text-decoration: none;
    color: var(--clr-white);
+   font-family: var(--ff-barlow);
 }
 .nav-links ul li a:hover{
    color: var(--clr-vry-dark-desaturated-blue);
@@ -156,9 +157,12 @@ header{
 
 .nav-links ul li .highlight{
    color: black;
-   padding: .5rem 1rem;
+   padding: .8rem 1.5rem;
    border-radius: 2rem;
    background-color: var(--clr-white);
+   text-transform: uppercase;
+   font-family: var(--ff-fraunces);
+   font-size: 1rem;
 }
 .nav-links ul li .highlight:hover{
    background-color: var(--clr-moderate-cyan);
@@ -179,6 +183,9 @@ header{
    letter-spacing: .5rem;
    margin-top: 5rem;
    font-family: var(--ff-fraunces);
+   font-size: 3rem;
+   padding-inline: 1rem;
+   font-weight: var(--fw-900);
 }
 
 
