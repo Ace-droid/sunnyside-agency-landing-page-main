@@ -1,3 +1,20 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap');
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap');
+
+
+
+
+
+
+
+
+
+
+
+
 /* costum properties */
 
 
@@ -19,9 +36,20 @@
    --clr-whitish:hsla(0, 0%, 100%, 0.549);
 
 
+
+    /* font family */
+   --ff-barlow: 'Barlow', sans-serif;
+   --ff-fraunces: 'Fraunces', serif;
+
    /* font size */
    --fs: 1.2rem;
 
+
+    /* font wieght */
+
+    --fw-600: 600;
+    --fw-700: 700;
+    --fw-900: 900;
 }
 /*
   1. Use a more-intuitive box-sizing model.
@@ -75,6 +103,14 @@
    font-size: var(--fs);
  }
 
+
+ h1, h2, h3{
+   font-family: var(--ff-fraunces);
+ }
+
+ p, small{
+   font-family: var(--ff-barlow);
+ }
 
 
 
@@ -136,11 +172,13 @@ header{
 .header-img{
    position: relative;
 }
+
 .header-container h1{
    color: var(--clr-white);
    text-transform: uppercase;
    letter-spacing: .5rem;
    margin-top: 5rem;
+   font-family: var(--ff-fraunces);
 }
 
 
@@ -148,6 +186,7 @@ header{
    position: absolute;
    bottom: 40%;
    left: 49%;
+   
 
 }
 
@@ -183,18 +222,21 @@ header{
 
 
 .white-bg p{
-   font-size: 1.2rem;
+   font-size: 1.1rem;
   color: var(--clr-vry-dark-grayish-blue);
    max-width: 28rem;
    text-align: start;
+   font-family: var(--ff-barlow);
+   
 
 }
 .white-bg h2{
-   max-width: 19rem;
+   max-width: 22rem;
    font-size: 2rem;
    font-weight: 900;
    line-height: 2rem;
    color: var(--clr-vry-dark-desaturated-blue);
+   font-family: var(--ff-fraunces);
  
 }
 
@@ -202,7 +244,10 @@ header{
    text-decoration: none;
    color: var(--clr-vry-dark-desaturated-blue);
    font-weight: bold;
- 
+   font-family: var(--ff-fraunces);
+   text-transform: uppercase;
+   font-size: .9rem;
+   font-weight: var(--fw-900);
 }
 .orange, .red{
    position: relative;
@@ -211,7 +256,7 @@ header{
 .red:after{
    position: absolute;
    content: "";
-   width: 6.5rem;
+   width:7rem;
    height: 8px;
    background-color: var(--clr-soft-redish);
    right: -3%;
@@ -223,7 +268,7 @@ header{
 .orange:after{
    position: absolute;
    content: "";
-   width: 6.5rem;
+   width: 7rem;
    height: 8px;
    background-color: var(--clr-yellowish);
    right: -3%;
@@ -276,7 +321,10 @@ header{
  .graphic-design-paragraph p, .photography-paragraph p{
    max-width: 23.1rem;
    margin: 0 auto;
+   font-size: 1.1rem;
  }
+
+
 
  .graphic-design-paragraph{
    color: var(--clr-desaturated-cyan);
@@ -317,6 +365,7 @@ header{
    font-size: .9rem;
    font-weight: bold;
    color: var(--clr-grayish-blue);
+   font-weight: var(--fw-900);
 }
 
 
@@ -343,10 +392,13 @@ header{
    font-size: 1rem;
    max-width: 18rem;
    margin: 0 auto;
+   color: var(--clr-vry-dark-grayish-blue);
 }
 .bold-text{
    font-weight: bold;
    font-size: 1rem;
+   font-family: var(--ff-fraunces);
+   font-weight: var(--fw-700);
 }
 small{
    font-size: .9rem;
@@ -397,6 +449,8 @@ footer{
 .footer-links li a{
    text-decoration: none;
    color: var(--clr-dark-moderate-cyan);
+   font-family: var(--ff-barlow);
+   
 }
 .footer-links li a:hover{
    color: var(--clr-white);
