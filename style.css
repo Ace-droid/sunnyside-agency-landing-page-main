@@ -301,6 +301,8 @@ header{
  */
 
 
+
+
 .flex{
    display: flex;
 }
@@ -313,18 +315,13 @@ header{
    background-image: url(images/desktop/image-graphic-design.jpg);
    background-position: center;
    background-size: cover;
-   height: 100vh;
-
- }
-
- .graphic-design-paragraph, .photography-paragraph{
-   padding-inline: 3rem;
-   margin-top: 27rem;
    text-align: center;
    padding-bottom: 2rem;
-   display: grid;
-   gap: 1rem;
+   padding-top: 22rem;
+   padding-inline: 1rem;
  }
+
+
 
  .graphic-design-paragraph p, .photography-paragraph p{
    max-width: 23.1rem;
@@ -346,7 +343,9 @@ header{
    background-image: url(images/desktop/image-photography.jpg);
    background-position: center;
    background-size: cover;
-   height: 100vh;
+   text-align: center;
+   padding-bottom: 2rem;
+   padding-top: 22rem;
 }
 
 
