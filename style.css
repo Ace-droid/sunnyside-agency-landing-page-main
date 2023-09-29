@@ -181,11 +181,12 @@ header{
    color: var(--clr-white);
    text-transform: uppercase;
    letter-spacing: .5rem;
-   margin-top: 5rem;
+   margin-top: 3rem;
    font-family: var(--ff-fraunces);
-   font-size: 3rem;
+   font-size: 3.5rem;
    padding-inline: 1rem;
    font-weight: var(--fw-900);
+   line-height: 1;
 }
 
 
@@ -318,7 +319,7 @@ header{
 
  .graphic-design-paragraph, .photography-paragraph{
    padding-inline: 3rem;
-   margin-top: 23rem;
+   margin-top: 27rem;
    text-align: center;
    padding-bottom: 2rem;
    display: grid;
@@ -457,10 +458,12 @@ footer{
    text-decoration: none;
    color: var(--clr-dark-moderate-cyan);
    font-family: var(--ff-barlow);
+   font-size: 1rem;
    
 }
 .footer-links li a:hover{
    color: var(--clr-white);
+  
 }
 
 .footer-socials{
@@ -487,6 +490,8 @@ footer{
       background-size: cover;
       background-position: center;
    }
+
+  
    .arrow{
       bottom: 23%;
    }
@@ -589,5 +594,13 @@ footer{
       margin: 0 auto;
    }
 
+
+}
+
+@media (max-width: 450px) {
+   .header-container h1{
+      font-size: 2rem;
+   }
+   
 
 }
